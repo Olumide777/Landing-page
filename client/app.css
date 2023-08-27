@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* global 92%+ browsers support */
+  background-color: darkslategrey;
+}
+
+/* ******************************************************* */
+/* BEGINNING OF NAVBAR SECTION  */
+/* ******************************************************* */
+.navbar {
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  padding-top: 60px;
+  flex-wrap: nowrap;
+}
+
+.logo-text {
+  color: white;
+  margin-left: 10px;
+}
+
+.navbar-logo {
+  display: flex;
+  margin-left: 60px;
+}
+
+.navbar-log {
+  background-color: white;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+.navbar-links {
+  display: flex;
+  color: aliceblue;
+  margin-left: 350px;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-items {
+  display: flex;
+  margin-left: 300px;
+}
+
+.navbar-item {
+  margin-left: 50px;
+}
+/* ******************************************************* */
+/* END OF NAVBAR SECTION  */
+/* ******************************************************* */
+.main {
+  margin-top: 90px;
+}
+
+.first-row {
+  display: flex;
+}
+
+.circle {
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.dotted-circles {
+  margin-left: 60px;
+}
+
+.gaps {
+  margin-top: 15px;
+}
+
+.position {
+  position: relative;
+}
+
+.thick {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 100px;
+  color: white;
+  top: 150px;
+  left: 250px;
+}
+
+.thin {
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  top: 270px;
+  left: 250px;
+}
+
+.yellow {
+  color: orange;
+}
+
+.button {
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 15px;
+}
+
+.button:not(:first-child) {
+  margin-left: 10px;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  top: 330px;
+  left: 250px;
+}
+
+.button-yellow {
+  background-color: orange;
+  box-shadow: 5px 5px 15px orange;
+  transition: all ease-in-out 0.2s;
+}
+
+.normal-button {
+  border: 1px solid white;
+  transition: all ease-in-out 0.3s;
+}
+
+.normal-button:hover {
+  background-color: orange;
+  transform: scaleX(1.1);
+}
+
+.button-yellow:hover {
+  transform: translateY(8px);
+}
+
+.icon-img {
+  background-color: white;
+  background-clip: initial;
+  margin-bottom: 28px;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 90%;
+  top: 40%;
+}
+
+.first {
+  /* position: absolute; */
+  top: 20px;
+}
+
+.cards {
+  position: absolute;
+  top: 80%;
+  left: 200px;
+}
+.wht-txt {
+  color: white;
+}
+
+.yell-txt {
+  color: orange;
+}
+
+.txt-mgn {
+  margin-left: 83px;
+  box-shadow: 3px 2px 12px orange;
+  font-weight: 400;
+}
+
+.dots {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.space {
+  margin-left: 15px;
+}
+
+.card-buttons {
+  position: absolute;
+  top: 125%;
+}
+
+.cards {
+  display: flex;
+}
+
+.card-gap {
+  margin-left: 80px;
+}
+
+.card-section-arrow {
+  margin-left: 80px;
+  margin-top: 70px;
+}
+
+/* ******************************************************* */
+/* END OF TRAVEL CARD SECTION  */
+/* ******************************************************* */
+
+/* MOBILE VIEW  */
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: red;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+
+  .mobile-view-txt {
+    display: flex;
+    justify-content: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+  }
+}
